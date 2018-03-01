@@ -29,9 +29,28 @@ But it will stop people overwriting the square.
 
 I broke the speak into three versions (see above). And focused on solving them
 the simplest way possible. Trying not to over commit on design structures,
-and adding marking points (the versions) to reflect and adapt my design. Identify other paths. 
+and adding marking points (the versions) to reflect and adapt my design. Identify other paths.
+
+Why did I choose a single array over multiple nested arrays or a matrix?
+   A single array seemed simpler to communicate with for an interface.
+   Instead of having to know how coordinates are set up you could just link each position
+   to a number.
+   I felt it was more extendable, as you could just increase the number of places, rather than
+   have to awkwardly change the number of arrays and their lengths.
+
+   The disadvantage is potentially working our who wins or loses could get more complex. Especially
+   if you extended the design. But I felt that actually, though this possibly is true. A single arrays
+   may be more adaptable to change to non-square grids, to varying lengths for wins, as you don't have to change
+   the underlying structure, just the way wins are calculated. When you start nesting arrays or rows, you
+   make it harder to adapt win lose algorithms. As these algorithms are more dependent on a rigid structure of data. 
 
 #### Targets (Written before starting) - no more than 4 points
+
+  - Focus on good OO design, not on just modelling real life
+  - Try out a new testing framework (Mocha)
+  - Make sure to not 'over test', focus on testing behaviour rather than state
+  - Add multiple points for reflection on my design. Don't commit too early to a design structure.
+
 
 #### What went well - no more than 3
 
