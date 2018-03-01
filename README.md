@@ -8,18 +8,29 @@
 Version 1
 You can input x's and o's into a board, setting specifical places.
 It will tell you when it is full, and the game is hence over.
-It assumes people will not overwrite a square, and that the players
-will work out who has won/lost.
+It assumes people:
+  a) will not overwrite a square,
+  b) that the players will work out who has won/lost.
+  c) will take it in turns themselves
+
 
 Version 2
 All the functionality of above.
 But now the game works out if anyone has won or lost. And ends the game
 if so.
-It still assumes people will not overwrite a square.
+It assumes people:
+  a) will not overwrite a square,
+  b) will take it in turns themselves
+
 
 Version 3
 All the functionaity of above.
-But it will stop people overwriting the square.
+It assumes people:
+  a) will take it in turns themselves
+
+Version 4
+It keeps track of player one and two and says who has won.
+
 
 ## How to use  <a name= "use"> </a>
 
@@ -35,14 +46,18 @@ Why did I choose a single array over multiple nested arrays or a matrix?
    A single array seemed simpler to communicate with for an interface.
    Instead of having to know how coordinates are set up you could just link each position
    to a number.
+
    I felt it was more extendable, as you could just increase the number of places, rather than
    have to awkwardly change the number of arrays and their lengths.
+
+   One thing I've kept, is that users can input X's or O's. There's no counter of player 1 or two.
+   That would
 
    The disadvantage is potentially working our who wins or loses could get more complex. Especially
    if you extended the design. But I felt that actually, though this possibly is true. A single arrays
    may be more adaptable to change to non-square grids, to varying lengths for wins, as you don't have to change
    the underlying structure, just the way wins are calculated. When you start nesting arrays or rows, you
-   make it harder to adapt win lose algorithms. As these algorithms are more dependent on a rigid structure of data. 
+   make it harder to adapt win lose algorithms. As these algorithms are more dependent on a rigid structure of data.
 
 #### Targets (Written before starting) - no more than 4 points
 
