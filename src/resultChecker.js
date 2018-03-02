@@ -2,8 +2,8 @@
 
   class ResultChecker {
 
-   winner() {
-     return false
+   winner(board) {
+    return board.includes('x')
    }
 
   }
