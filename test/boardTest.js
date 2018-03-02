@@ -37,12 +37,12 @@ describe('Board', function() {
        expect(board.full()).equal(false)
      })
 
-    // it('when all spaces are filled, returns fulld', () => {
-    //   let board = new Board();
-    //   for(var i=1; i < 10; i += 1) {
-    //   board.play('o', i);
-    // }
-    //   expect(board.full()).equal(true)
-    // })
+    it('when all spaces are filled, returns fulld', () => {
+      let board = new Board();
+      for(var i=1; i < 10; i += 1) {
+      board.play('o', i);
+    }
+      expect(board.full()).equal(true)
+    })
   });
 });
