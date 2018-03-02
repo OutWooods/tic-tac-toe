@@ -23,6 +23,10 @@
     play(val, pos) {
       this.board[pos-1] = val
     }
+
+    full() {
+      return false
+    }
   };
 
   exports.Board = Board;
