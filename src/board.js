@@ -20,8 +20,8 @@
       return store;
    }
 
-    play() {
-
+    play(val, pos) {
+      this.board[pos-1] = val
     }
   };
 

@@ -18,19 +18,12 @@ describe('Board', function() {
       expect(empty).equal('')
     });
 
-    it('should return an that contains only null values in', function() {
-      console.log(Board)
-      let board = new Board();
-      expect(board.current()).equal(expectedBoard)
-    });
 
-    // it('should add an X to the board', () => {
-    //   console.log(Board)
-    //   let board = new Board();
-    //   board.play('x', 4);
-    //   let expectedBoard = [null, null, null, null, 'x', null, null, null, null]
-    //   expect(board.current()).equal(expectedBoard)
-    // })
+    it('should add an X to the board', () => {
+      let board = new Board();
+      board.play('x', 4);
+      expect(board.current()[3]).equal('x')
+    })
 
   });
 });
