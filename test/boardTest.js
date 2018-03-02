@@ -25,5 +25,11 @@ describe('Board', function() {
       expect(board.current()[3]).equal('x')
     })
 
+    it('should add an O to the board', () => {
+      let board = new Board();
+      board.play('o', 8);
+      expect(board.current()[7]).equal('o')
+    })
+
   });
 });
