@@ -25,7 +25,7 @@
     }
 
     full() {
-      return (this.board.includes(null)) ? false : true 
+      return !this.board.includes(null)
     }
   };
 
