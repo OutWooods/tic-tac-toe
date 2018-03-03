@@ -13,6 +13,8 @@ It assumes people:
   b) that the players will work out who has won/lost.
   c) will take it in turns themselves
 
+- [x] Complete
+
 
 Version 2
 All the functionality of above.
