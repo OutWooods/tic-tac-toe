@@ -12,6 +12,7 @@ describe('Board', function() {
       assert.lengthOf(board.current(), (9))
     });
 
+ //unhappy with this test, want to find a better way to test it
     it('should contain only null', function() {
       let board = new Board();
       let empty = board.current().join('')
@@ -21,14 +22,12 @@ describe('Board', function() {
   describe('#add', () => {
     it('should add an X to the board', () => {
       let board = new Board();
-      board.play('x', 4);
-      expect(board.current()[3]).equal('x')
+      expect(board.play('x', 4)[3]).equal('x')
     });
 
     it('should add an O to the board', () => {
       let board = new Board();
-      board.play('o', 8);
-      expect(board.current()[7]).equal('o')
+      expect(board.play('O', 8)[7]).equal('O')
     })
   })
    describe('#isFull', () => {

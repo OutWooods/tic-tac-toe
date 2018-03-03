@@ -22,6 +22,7 @@
 
     play(val, pos) {
       this.board[pos-1] = val
+      return this.board
     }
 
     full() {
