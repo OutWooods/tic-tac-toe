@@ -44,6 +44,8 @@ I broke the speak into three versions (see above). And focused on solving them
 the simplest way possible. Trying not to over commit on design structures,
 and adding marking points (the versions) to reflect and adapt my design. Identify other paths.
 
+After watching Sandi-Metz I decide to stick to one class to achieve this. And only startcreating new classes when it became really necessary. So prevent over commitment early on. 
+
 Why did I choose a single array over multiple nested arrays or a matrix?
    A single array seemed simpler to communicate with for an interface.
    Instead of having to know how coordinates are set up you could just link each position

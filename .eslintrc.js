@@ -1,0 +1,9 @@
+module.exports = {
+    "extends": "airbnb-base",
+    "plugins": ["mocha"],
+    "rules": {"mocha/no-exclusive-tests": "error"},
+    "env": {
+      "node": true,
+      "mocha": true
+    }
+};
