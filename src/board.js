@@ -25,6 +25,8 @@
     full() {
       return !this.board.includes(null);
     }
+
+    another(){}
   }
 
   exports.Board = Board;
