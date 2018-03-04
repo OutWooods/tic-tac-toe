@@ -1,7 +1,6 @@
 /* eslint-env mocha */
 
-const { assert } = require('chai');
-const { expect } = require('chai');
+const { assert, expect } = require('chai');
 const Board = require('../src/board').Board;
 
 describe('Board', () => {

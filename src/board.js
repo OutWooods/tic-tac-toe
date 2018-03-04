@@ -1,6 +1,5 @@
-
-(function (exports) {
-  class Board {
+(function(exports) {
+   class Board {
     constructor() {
       this.board = this.boardSetup();
     }
@@ -28,5 +27,5 @@
 
   }
 
-  exports.Board = Board;
-}(this));
+  exports.Board = Board
+}(this))
